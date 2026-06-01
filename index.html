@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Projects Hub</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="mainImage/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <header class="topbar">
+        <div class="brand">
+            <span class="brand-mark"><img src="mainImage/logo.png" alt="Brand Icon" /></span>
+            <span>Practice Hub</span>
+        </div>
+
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">HTML • CSS • JavaScript</p>
+                <h1>Welcome to My Practice Projects</h1>
+                <p class="subtext">
+                    A clean dashboard to open every practice folder from one beautiful homepage. The Projects based on
+                    only HTML, CSS and Vanilla JavaScript..
+                </p>
+
+                <div class="search-wrap">
+                    <input id="searchInput" type="text" placeholder="Search project..." />
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="section-head">
+                <h2>Projects</h2>
+                <p>Click any card to open that folder’s index.html</p>
+            </div>
+
+            <div class="grid" id="projectsGrid"></div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-card">
+                <h2>About This Hub</h2>
+                <p>
+                    This page is built only with HTML, CSS and vanilla JavaScript.
+                    It serves as a central hub for all my practice projects, allowing me to easily access and showcase
+                    my work. Each project is organized in its own folder, and clicking on a project card will take you
+                    directly to that project's index.html file. This setup helps me stay organized and provides a clean,
+                    user-friendly interface to navigate through my projects.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© K1NG 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
