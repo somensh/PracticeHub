@@ -1,0 +1,166 @@
+:root {
+  --extra-light: #f3f4f6;
+  --main-font-color: #cb2957;
+  --second-light: #eeeeee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Excon", sans-serif;
+  color: var(--extra-light);
+  height: 100vh;
+  background-image: url("assests/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  position: relative;
+  padding: 0 2rem;
+  backdrop-filter: blur(0px);
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.nav__logo a {
+  font-family: "Comico", cursive;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--extra-light);
+}
+
+.nav__links {
+  position: absolute;
+  right: 0;
+  top: 80px;
+  width: 100%;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: var(--main-font-color);
+  font-weight: bolder;
+  background-color: rgba(255, 255, 255, 0.304);
+  cursor: pointer;
+}
+
+.nav__links .link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  font-family: "Comico", cursive;
+}
+
+.toggle__btn {
+  display: block;
+  color: var(--extra-light);
+  font-size: 2rem;
+}
+
+.hero {
+  max-width: 1200px;
+  height: calc(100vh - 80px);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--extra-light);
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1rem;
+}
+
+.hero h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  color: var(--main-font-color);
+}
+
+.hero h1 span {
+  font-family: "Comico", cursive;
+}
+
+.hero button {
+  width: 150px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 640px) {
+  .nav__links {
+    width: 250px;
+  }
+
+  .hero {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .hero {
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header:hover {
+    backdrop-filter: blur(0.5px);
+  }
+  .nav__links {
+    font-size: 1.2rem;
+    position: unset;
+    width: unset;
+    flex-direction: row;
+    gap: 0.9rem;
+    display: flex !important;
+    background: transparent;
+  }
+
+  .toggle__btn {
+    display: none;
+  }
+
+  .hero h2 {
+    font-size: 4rem;
+  }
+
+  .hero h1 {
+    font-size: 8rem;
+  }
+
+  .hero button {
+    width: 200px;
+    padding: 1rem;
+    font-weight: 700;
+  }
+}
