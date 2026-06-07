@@ -3,6 +3,9 @@ const projects = [
   { name: "PracticeCode2", path: "./PracticeCode2/index.html" },
   { name: "PracticeCode3", path: "./PracticeCode3/index.html" },
   { name: "PracticeCode4", path: "./PracticeCode4/index.html" },
+  { name: "PracticeCode5", path: "./PracticeCode5/index.html" },
+  { name: "PracticeCode6", path: "./PracticeCode6/index.html" },
+  { name: "PracticeCode7", path: "./PracticeCode7/index.html" },
 ];
 
 const grid = document.getElementById("projectsGrid");
